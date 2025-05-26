@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f7fb;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 80px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-heading {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #6b7280;
+    text-align: center;
+  }
+  
+  .nav-item.active {
+    color: #3b82f6;
+  }
+  
+  .nav-icon {
+    font-size: 20px;
+  }
+  
+  .nav-text {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #ffffff;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2563eb;
+  }
+  
+  .search-bar {
+    margin-left: 20px;
+    background-color: #f3f4f6;
+    border-radius: 20px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    color: #6b7280;
+  }
+  
+  .search-icon {
+    margin-right: 5px;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .notification-icon {
+    font-size: 20px;
+    color: #6b7280;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #2563eb;
+  }
+  
+  .user-icon, .add-icon {
+    font-size: 20px;
+  }
+  
+  /* Dashboard */
+  .dashboard {
+    flex: 1;
+    padding: 25px;
+    overflow-y: auto;
+  }
+  
+  .dashboard-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  /* Anatomy Section */
+  .anatomy-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .anatomy-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .anatomy-image {
+    width: 120px;
+    height: 180px;
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  .health-indicator {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .heart {
+    top: 40px;
+    left: 20px;
+  }
+  
+  .indicator-icon {
+    font-size: 16px;
+  }
+  
+  .indicator-text {
+    font-size: 12px;
+    color: #000;
+  }
+  
+  .health-indicator.heart .indicator-icon {
+    color: #22c55e;
+  }
+  
+  .health-log-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #fef08a;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  
+  .log-icon {
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .log-text {
+    font-size: 12px;
+    color: #000;
+  }
+  
+  /* Health Status Cards */
+  .health-status-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .status-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .status-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #e5e7eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  
+  .status-info {
+    flex: 1;
+    margin-left: 15px;
+  }
+  
+  .status-info h3 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .status-info p {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
+  .status-bar {
+    width: 80px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #e5e7eb;
+    overflow: hidden;
+  }
+  
+  .status-fill {
+    height: 100%;
+    border-radius: 4px;
+  }
+  
+  .status-fill.unhealthy-fill {
+    width: 50%;
+    background-color: #ef4444;
+  }
+  
+  .status-fill.healthy-fill {
+    width: 50%;
+    background-color: #d1d5db;
+  }
+  
+  /* Calendar Section */
+  .calendar-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .calendar-header h3 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .calendar-header span {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .calendar-day {
+    text-align: center;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .day-label {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 5px;
+  }
+  
+  .day-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 5px auto;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .day-number.active {
+    background-color: #3b82f6;
+    color: #ffffff;
+  }
+  
+  .times {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 5px;
+  }
+  
+  .times span {
+    font-size: 9px;
+    color: #9ca3af;
+  }
+  
+  /* Calendar Appointments */
+  .calendar-appointments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .appointment-card {
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  
+  .appointment-card h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .appointment-card.dentist h4 {
+    color: #3b82f6;
+  }
+  
+  .appointment-card.physiotherapy h4 {
+    color: #8b5cf6;
+  }
+  
+  .appointment-card p {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
+  /* Upcoming Schedule */
+  .upcoming-schedule {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .upcoming-schedule h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .schedule-day {
+    margin-bottom: 15px;
+  }
+  
+  .schedule-day h4 {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 10px;
+  }
+  
+  .appointment-card {
+    display: flex;
+    align-items: center;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .appointment-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  
+  .appointment-card.health-checkup .appointment-icon {
+    background-color: #ede9fe;
+  }
+  
+  .appointment-card.ophthalmologist .appointment-icon {
+    background-color: #dbeafe;
+  }
+  
+  .appointment-card.cardiologist .appointment-icon {
+    background-color: #fee2e2;
+  }
+  
+  .appointment-card.neurologist .appointment-icon {
+    background-color: #ede9fe;
+  }
+  
+  .appointment-info {
+    margin-left: 15px;
+  }
+  
+  .appointment-info h5 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .appointment-info p {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
+  /* Activity Feed */
+  .activity-feed {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activity-feed h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .activity-feed p {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 15px;
+  }
+  
+  .activity-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  
+  .activity-day {
+    text-align: center;
+  }
+  
+  .activity-day .day-label {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
+  .bars {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2px;
+    height: 80px;
+  }
+  
+  .bar {
+    width: 6px;
+    background-color: #3b82f6;
+    border-radius: 2px 2px 0 0;
+  }
+  
+  /* Responsiveness */
+  @media (min-width: 1024px) {
+    .dashboard-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 10px;
+    }
+  
+    .sidebar-heading {
+      display: none;
+    }
+  
+    .sidebar-nav {
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    .nav-text {
+      font-size: 8px;
+    }
+  
+    .header {
+      padding: 10px 15px;
+    }
+  
+    .logo {
+      font-size: 20px;
+    }
+  
+    .search-bar {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  
+    .dashboard {
+      padding: 15px;
+    }
+  
+    .dashboard-title {
+      font-size: 20px;
+    }
+  }

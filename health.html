@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="sidebar-heading">GENERAL</h2>
+      <nav class="sidebar-nav">
+        <div class="nav-item active">
+          <span class="nav-icon">📊</span>
+          <span class="nav-text">Dashboard</span>
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">🕒</span>
+          <span class="nav-text">History</span>
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">📅</span>
+          <span class="nav-text">Calendar</span>
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">🩺</span>
+          <span class="nav-text">Appointments</span>
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">📈</span>
+          <span class="nav-text">Statistics</span>
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">🧪</span>
+          <span class="nav-text">Tests</span>
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">💬</span>
+          <span class="nav-text">Chat</span>
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">📞</span>
+          <span class="nav-text">Support</span>
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">⚙️</span>
+          <span class="nav-text">Setting</span>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-left">
+          <h1 class="logo">Healthcare.</h1>
+          <div class="search-bar">
+            <span class="search-icon">🔍</span>
+            <span>Search</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <span class="notification-icon">🔔</span>
+          <div class="user-profile">
+            <span class="user-icon">👤</span>
+            <span class="add-icon">+</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard -->
+      <main class="dashboard">
+        <h2 class="dashboard-title">Dashboard</h2>
+        <div class="dashboard-grid">
+          <!-- Anatomy Section -->
+          <div class="anatomy-section">
+            <div class="anatomy-card">
+              <div class="anatomy-image">
+                <span><img src="C:\Users\lanka\Desktop\full-human-body.png" alt="HTML5 Icon" style="width:100%;height:170px;object-fit:fit;"></span>
+              </div>
+              <div class="health-indicator heart">
+                <span class="indicator-icon">❤️</span>
+                <span class="indicator-text">Healthy Heart</span>
+              </div>
+              <div class="health-log-button">
+                <span class="log-icon">🦵</span>
+                <span class="log-text">Healthy Leg</span>
+              </div>
+            </div>
+            <div class="health-status-cards">
+              <div class="status-card">
+                <div class="status-icon">🫁</div>
+                <div class="status-info">
+                  <h3>Lungs</h3>
+                  <p>Date: 26 Oct 2021</p>
+                </div>
+                <div class="status-bar unhealthy">
+                  <div class="status-fill unhealthy-fill"></div>
+                </div>
+              </div>
+              <div class="status-card">
+                <div class="status-icon">🦷</div>
+                <div class="status-info">
+                  <h3>Teeth</h3>
+                  <p>Date: 26 Oct 2021</p>
+                </div>
+                <div class="status-bar healthy">
+                  <div class="status-fill healthy-fill"></div>
+                </div>
+              </div>
+              <div class="status-card">
+                <div class="status-icon">🦴</div>
+                <div class="status-info">
+                  <h3>Bone</h3>
+                  <p>Date: 26 Oct 2021</p>
+                </div>
+                <div class="status-bar healthy">
+                  <div class="status-fill healthy-fill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Calendar Section -->
+          <div class="calendar-section">
+            <div class="calendar-header">
+              <h3>This Week</h3>
+              <span>October 2021</span>
+            </div>
+            <div class="calendar-grid">
+              <div class="calendar-day">
+                <span class="day-label">Mon</span>
+                <span class="day-number active">25</span>
+                <div class="times">
+                  <span>10:00</span>
+                  <span>11:00</span>
+                  <span>12:00</span>
+                </div>
+              </div>
+              <div class="calendar-day">
+                <span class="day-label">Tue</span>
+                <span class="day-number active">26</span>
+                <div class="times">
+                  <span>09:00</span>
+                </div>
+              </div>
+              <div class="calendar-day">
+                <span class="day-label">Wed</span>
+                <span class="day-number">27</span>
+                <div class="times">
+                  <span>—</span>
+                </div>
+              </div>
+              <div class="calendar-day">
+                <span class="day-label">Thu</span>
+                <span class="day-number active">28</span>
+                <div class="times">
+                  <span>11:00</span>
+                  <span>14:00</span>
+                </div>
+              </div>
+              <div class="calendar-day">
+                <span class="day-label">Fri</span>
+                <span class="day-number active">29</span>
+                <div class="times">
+                  <span>16:00</span>
+                </div>
+              </div>
+              <div class="calendar-day">
+                <span class="day-label">Sat</span>
+                <span class="day-number active">30</span>
+                <div class="times">
+                  <span>15:00</span>
+                  <span>16:00</span>
+                </div>
+              </div>
+              <div class="calendar-day">
+                <span class="day-label">Sun</span>
+                <span class="day-number active">31</span>
+                <div class="times">
+                  <span>09:00</span>
+                  <span>10:00</span>
+                  <span>11:00</span>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-appointments">
+              <div class="appointment-card dentist">
+                <h4>Dentist</h4>
+                <p>09:00-11:00</p>
+                <p>Dr. Cameron Williamson</p>
+              </div>
+              <div class="appointment-card physiotherapy">
+                <h4>Physiotherapy Appointment</h4>
+                <p>11:00-12:00</p>
+                <p>Dr. Kevin Jones</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upcoming Schedule -->
+          <div class="upcoming-schedule">
+            <h3>The Upcoming Schedule</h3>
+            <div class="schedule-day">
+              <h4>On Thursday</h4>
+              <div class="appointment-card health-checkup">
+                <div class="appointment-icon">💉</div>
+                <div class="appointment-info">
+                  <h5>Health checkup complete</h5>
+                  <p>11:00 AM</p>
+                </div>
+              </div>
+              <div class="appointment-card ophthalmologist">
+                <div class="appointment-icon">👁️</div>
+                <div class="appointment-info">
+                  <h5>Ophthalmologist</h5>
+                  <p>14:00 PM</p>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-day">
+              <h4>On Saturday</h4>
+              <div class="appointment-card cardiologist">
+                <div class="appointment-icon">❤️</div>
+                <div class="appointment-info">
+                  <h5>Cardiologist</h5>
+                  <p>12:00 AM</p>
+                </div>
+              </div>
+              <div class="appointment-card neurologist">
+                <div class="appointment-icon">🧠</div>
+                <div class="appointment-info">
+                  <h5>Neurologist</h5>
+                  <p>16:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity Feed -->
+        <div class="activity-feed">
+          <h3>Activity</h3>
+          <p>3 appointments on this week</p>
+          <div class="activity-grid">
+            <div class="activity-day">
+              <span class="day-label">Mon</span>
+              <div class="bars">
+                <div class="bar" style="height: 20px;"></div>
+                <div class="bar" style="height: 40px;"></div>
+                <div class="bar" style="height: 60px;"></div>
+              </div>
+            </div>
+            <div class="activity-day">
+              <span class="day-label">Tue</span>
+              <div class="bars">
+                <div class="bar" style="height: 30px;"></div>
+                <div class="bar" style="height: 50px;"></div>
+                <div class="bar" style="height: 70px;"></div>
+              </div>
+            </div>
+            <div class="activity-day">
+              <span class="day-label">Wed</span>
+              <div class="bars">
+                <div class="bar" style="height: 10px;"></div>
+                <div class="bar" style="height: 20px;"></div>
+                <div class="bar" style="height: 30px;"></div>
+              </div>
+            </div>
+            <div class="activity-day">
+              <span class="day-label">Thu</span>
+              <div class="bars">
+                <div class="bar" style="height: 40px;"></div>
+                <div class="bar" style="height: 60px;"></div>
+                <div class="bar" style="height: 80px;"></div>
+              </div>
+            </div>
+            <div class="activity-day">
+              <span class="day-label">Fri</span>
+              <div class="bars">
+                <div class="bar" style="height: 20px;"></div>
+                <div class="bar" style="height: 30px;"></div>
+                <div class="bar" style="height: 40px;"></div>
+              </div>
+            </div>
+            <div class="activity-day">
+              <span class="day-label">Sat</span>
+              <div class="bars">
+                <div class="bar" style="height: 50px;"></div>
+                <div class="bar" style="height: 70px;"></div>
+                <div class="bar" style="height: 90px;"></div>
+              </div>
+            </div>
+            <div class="activity-day">
+              <span class="day-label">Sun</span>
+              <div class="bars">
+                <div class="bar" style="height: 30px;"></div>
+                <div class="bar" style="height: 40px;"></div>
+                <div class="bar" style="height: 50px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
